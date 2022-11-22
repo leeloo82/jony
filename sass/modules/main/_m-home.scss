@@ -1,0 +1,462 @@
+    /*section about*/
+    .m-main-home-about {
+
+        background: map-get($color, background-primary-m-main );
+    }
+
+    h2 {
+
+        margin-top: 0;
+        line-height: 3rem;
+        color: map-get($color, first);
+
+        &::first-letter {
+
+            text-transform: uppercase;
+    
+        }
+
+    }
+
+    .l-main-content  {
+
+        h2 {
+
+            padding: 7rem 1rem 1rem 1rem;
+
+        }
+    }
+    
+    /*propriété spécifique mot clé*/
+    .specialty-work {
+
+        display: inline-block;
+        
+        &::first-letter {
+
+            text-transform: uppercase;
+
+        }
+    }
+    
+    .city {
+        
+        text-transform: capitalize;
+        
+        
+    }
+    
+    .m-main-progress-bar {
+
+        margin-bottom: 8rem ;
+
+    }
+
+    .m-progress-bar-text-wrap {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: map-get($color, first); 
+    
+        h4{
+            &::first-letter {
+    
+                text-transform: uppercase;
+            }
+    
+        }
+    
+        p {
+            margin: 1.5rem 0 0 0;
+        }
+       
+    }
+        
+    .m-progress-bar {
+
+        width: 100%;
+        height: .5rem;
+        background-color: map-get($color, first);
+        border-radius: 25px ; 
+
+    }
+        
+    .m-progress-bar-intern {
+        
+        display: block;
+        height: .5rem;
+        background-color: map-get($color, second);
+        border-radius: 25px;
+
+    }
+        
+    .m-main-about-wrap {
+    
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         margin: 0 1rem ;    
+    }
+
+    .m-main-home-about-content {
+
+        p {
+
+            line-height: 2rem;
+            color: map-get($color, paragraph-first);
+
+        }
+    }
+
+    .m-main-download-cv {
+
+        width: 9rem;
+        height: 1rem;
+        border: 1px solid map-get($color, second);
+        
+        margin: 4rem 1rem 2.6rem 0 ;
+        padding: 1rem 1rem 2rem 1rem ;
+        text-align: center;
+    
+        a {
+
+            text-transform: capitalize;
+            color: map-get($color, second);
+            font-weight: bold;
+        }
+        
+    }
+            
+/*section about end*/
+    
+/*section service*/
+    .services {
+        
+        background: map-get($color, background-second-m-main);
+        padding: 1rem 0;
+    
+        h2 {
+
+            color: map-get($color, first);
+            text-transform: capitalize;
+            font-weight: normal;
+            font-size: 2rem;
+            
+        }
+    
+    }
+    
+    .m-main-services-wrap {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        h3 {
+
+            color: map-get($color, second);
+            font-size: 1.8rem;
+            font-weight: normal;
+        }
+    
+        p {
+
+            color: map-get($color, paragraph-first);
+
+        }
+    
+    }
+    
+    .container-service {
+    
+        border: 1px solid map-get($color, second);
+        text-align: center;
+        margin: 1rem;
+    
+        .m-main-title-service-mobile-design, .m-main-title-service-web-dev {
+    
+            text-transform: capitalize;
+        
+        }
+    
+        .m-main-title-service-ecommerce{
+            
+            &::first-letter {
+    
+            text-transform: uppercase;
+        }
+        
+    }
+    
+    .icon-mobile-design {
+
+        background: url(../pictures/home/iconSvg/mobileDesign.svg) no-repeat;
+        
+    }
+    
+    .icon-web-dev {
+    
+        background: url(../pictures/home/iconSvg/webDev.svg) no-repeat;
+        
+    }
+    
+    .icon-ecommerce {
+    
+        background: url(../pictures/home/iconSvg/ecommerce.svg) no-repeat;
+        
+    }
+    
+    .icon-mobile-design,.icon-web-dev,.icon-ecommerce { 
+    
+        width: 6rem;
+        height: 5rem;
+        margin: 1rem auto;
+
+    }
+    
+    
+}
+
+/*section services end*/
+    
+/*section work*/
+    
+.works {
+
+    background: map-get($color,background-primary-m-main);
+    padding: 9rem 1rem 8rem 1rem;
+    
+    a {
+        display: inline-block;
+        color: map-get($color,first);
+        text-transform: capitalize;
+        margin-top: 2.3rem;
+    }
+
+    :hover { 
+
+        color: map-get($color, second);
+
+    }
+
+    h3 {
+
+        color: map-get($color,second);
+        text-transform: capitalize;
+        margin: .5rem 0 7rem 0;
+
+    }
+}
+    
+// .m-main-work-title {
+    .works h2 {
+
+    color: map-get($color,first);
+    text-transform: capitalize;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2rem;
+
+}
+    
+.m-main-work-wrap {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+    
+.m-main-more-work-link {
+
+    border: 1px solid map-get($color,second);
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+
+}
+    
+.m-main-more-work-link a {
+
+    color: map-get($color,second);
+    margin: 1rem;
+
+}
+/* section works end*/
+    
+    
+    /*module partiellement générale*
+        /*section client-say*/
+.client-say {
+
+    background: map-get($color,background-second-m-main);
+    padding: 1rem 0 3.5rem 1rem;
+
+    h2 {
+
+        color: map-get($color,first);
+        margin-top: 4rem;
+        font-weight: normal;
+        font-size: 2rem ;
+        padding: 0;
+        
+    }
+
+    p {
+        color: map-get($color,paragraph-first);
+
+    }
+
+    .client-say-title-principal {
+
+        text-transform: capitalize;
+
+    }
+
+}
+    
+.client-say-profil-wrap {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+
+    img {
+        width: 4rem;
+    
+    }
+}
+    
+.client-say-profil-wrap-content {
+
+    h3 {
+
+        color: map-get($color, second);
+        text-transform: capitalize;
+        margin: .5rem;
+
+    }
+
+    h4 {
+        
+        color: map-get($color, first);
+        text-transform: capitalize;
+        font-size: .7rem;
+        margin: .5rem;
+        
+    }
+
+    .speciality-work {
+        
+        font-weight: normal;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+/*section about*/
+    .m-main-home-about {
+
+        h2 {
+
+            padding: 7rem 1rem 1rem 5rem;
+            width: 75%;
+            font-size: 2.4rem;
+            margin: 0;
+            font-weight: normal;
+        }
+
+    } 
+
+    .specialty-work , .city {
+
+        font-weight: normal;
+    }
+
+    .m-main-about-wrap {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10%;
+        
+        margin: 0 auto ;
+        padding: 0 5rem;
+    }
+        
+    /*section about end*/
+
+    /*section service*/
+
+    .services {
+        
+        h2 {
+
+            padding: 7rem 1rem 1rem 3.8rem;
+
+        }
+
+    }
+
+    .m-main-services-wrap {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto ;
+        padding: 0 3rem;
+
+        h3 {
+            color: map-get($color, second);
+            font-size: 1.17rem;
+            font-weight: normal;
+
+        }
+    }
+
+    /*section works*/    
+    .m-main-work-title {
+
+        margin: 0 0 1rem 5rem;
+
+    } 
+
+    .m-main-work-wrap {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+        margin: 0 auto ;
+        padding: 0 9rem;
+
+        .m-main-work-wrap-content-4 {
+
+            position: relative;
+            bottom: 18%;
+            
+        }
+
+    }
+    
+    /*gestion work end*/
+
+    /*gestion page services*/
+    .services-page {
+
+        h3 {
+                color: map-get($color, second);
+                font-size: 1.17rem;
+                font-weight: normal;
+
+            }
+
+    }
+    /*section service end*/
+
+    /*section client-say*/
+
+    .client-say {
+
+        padding: 1rem 0 8rem 6rem;
+
+    }
+    /*section client-say end*/
+
+}
+

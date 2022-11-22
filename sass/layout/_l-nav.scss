@@ -1,0 +1,148 @@
+
+.icon-burger {
+
+    position: absolute;
+    left: 89%;
+    top: 1rem;
+
+    a {
+
+        color:  map-get($color, first);
+        font-size: 2rem;  
+      
+    }
+}
+
+
+
+.l-header-nav {
+
+    display: none;
+    /*pour qu'a l'ouverture le menu ce place au-dessous de tout les éléments*/
+    position: absolute;
+    width: 90%;
+
+}
+
+@keyframes translateMenu {
+
+    0% {
+
+        
+        transform: translate(-50rem);
+    }
+
+    100% {
+
+        transform: translate(0rem);
+    }
+
+}
+
+.l-header-nav.is-active {
+
+    display: block;
+    animation: translateMenu 2s ;
+
+}
+
+.l-header-nav-wrap { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: map-get($color, first);
+    margin: 0 1rem ;
+
+    li {
+
+        margin: .5rem 1rem;
+
+        &::first-letter {
+
+            text-transform: uppercase;
+        }
+    }
+
+    a {
+        display: block;
+
+        color: map-get($color, third);
+        font-weight: bold;
+        font-size: 1rem; 
+
+        &::first-letter{
+
+            text-transform: uppercase;
+            
+        }
+
+        &:hover {
+
+            color: map-get($color, second);
+            background-color: -get($color, third);
+
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .l-header-nav.is-active {
+
+        animation: none ;
+    
+    }
+
+    .icon-burger {
+
+        display: none;
+
+    }
+   
+    
+    .l-header-nav {
+
+        display: block;
+        
+    }
+
+    .l-header-nav-wrap {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        background-color: map-get($color, color-transparent);
+        width: 50%;
+        position: relative;
+        left: 25%;
+        bottom: 1rem; 
+
+        li {
+
+            margin: .5rem;
+
+        }
+
+        a {
+
+            color: map-get($color, second);
+            
+        }
+
+     }/*l-header-nav-wrap end*/
+
+}/*media 720px end*/
+
+@media screen and (min-width: 1024px) {
+ 
+    .l-header-nav-wrap {
+
+        left: 30%;
+
+     }
+ 
+}

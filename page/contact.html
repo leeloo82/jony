@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen">
+</head>
+<body>
+    <header class="l-header-main">
+        <div class="header-background-work">
+            <div class="l-header-logo">
+                <img src= "../pictures/logo/tony.png" alt= "logo tony" title= "logo tony">
+            </div>
+    
+            <div id="menuHamburger">
+                <div class="icon-burger">
+                    <a href="#" class="fas fa-bars"></a>
+                </div>
+        
+                <div id="mainMenu" class="l-header-nav">
+                    <nav>
+                        <ul class="l-header-nav-wrap">
+                            <li><a href="../index.html">home</a></li>
+                            <li><a href="work.html">works</a></li>
+                            <li><a href="service.html">services</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="talk">
+                    <a href="#">let's talk</a>
+                </div>
+          </div><!--menu burger end-->
+          <div class="header-works-content-text">
+              <h1>contact</h1>
+          </div>
+        </div>
+    </header>
+    <main class="l-main">
+        <div class="l-main-content">
+            <div class="container-contact-page">
+                <div class="m-main-contact-map">
+                    <img src="../pictures/contact/map.PNG" alt="Buttonwood, Irvine, CA, États-Unis" title="Buttonwood, Irvine, CA, États-Unis">
+                </div>
+                
+                <h1 class="m-main-contact-title-principal">get in <span class="style-m-main-contact-title-principal">touch</span></h1>
+                <div class="m-main-contact-wrap">
+                    <div class="m-main-contact-form">
+                        <form class="form-contact" action=../php/contact.php method="post">
+                            <div class="input-wrap">
+                                <textarea name="cf_message" rows="10" cols="37" autofocus >enter message</textarea>
+                            </div>
+                            <div class="style-champ-specific-wrap">
+                                <input class="style-champ-specific" type="text" name="cf_name" placeholder="enter your name">
+                                <input class="style-champ-specific"  type="email" name="cf_email" placeholder="enter email address">
+                            </div>
+                            <!-- <div class="input-wrap">
+                                <input type="text" name='subject-mail' placeholder="enter Subject">
+                            </div> -->
+                            <input class="send" type="submit" value="send message">
+                        </form>
+                    </div>
+                    <div class="m-main-contact-information-contact">
+                        <div class="m-main-contact-container-element-contact">
+                            <span class="fas fa-home"></span>
+                            <div class="text">
+                                <h2 class="text-style">buttonwood, california.</h2>
+                                <p class="text-style">rosemead, <span class="text-style-specific">ca</span> 91770</p>
+
+                            </div>
+                        </div>
+                        <div class="m-main-contact-container-element-contact">
+                            <span class="fas fa-tablet-alt"></span>
+                            <div class="text">
+                                <h2>00 (440) 9865 562</h2>
+                                <p class="text-style">mon <span class="text-style-specific-word">to</span> fri 9am to 6pm</p>
+                            </div>
+                        </div>
+                        <div class="m-main-contact-container-element-contact">
+                            <span class="far fa-envelope"></span>
+                            <div class="text">
+                                <h2>support@colorlib.com</h2>
+                                <p>send us your query anytime!</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div><!--m-main-contact-wrap end-->
+            </div><!--container-contact-page end-->
+        </div><!--l-main-content end-->
+    </main>
+
+    <footer class="l-footer-main">
+        <div class="footer-background">
+            <h1>do you have any <span class="l-footer-main-title-word">project?</span><a class="footer-title-link" href="#">let's talk</a></h1>
+        
+            <p class="footer-background-paragraph-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dignissimos?
+            </p>
+            <div class=" footer-social-network-wrap">
+                <div>
+                    <div class="footer-social-network-wrap-content">
+                        <a href="#">behance</a>
+                        <span class="fab fa-behance"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-social-network-wrap-content">
+                        <a href="#">dribbble</a>
+                        <span class="fab fa-dribbble"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-social-network-wrap-content">
+                        <a href="#">medium</a>
+                        <span class="fab fa-medium-m"></span>
+                    </div>
+                </div>
+                <div >
+                    <div class="footer-social-network-wrap-content">
+                        <a href="#">linkedin</a>
+                        <span class="fab fa-linkedin-in"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>
+                    copyright &copy; 2020 <span>all</span> rights reserved | <span>this</span> template in made with &#9825; by  <a href="#">colorlib</a>
+                </p>
+            </div>
+        </div> 
+    </footer>
+    <script src="../js/menu.js"></script>
+    
+</body>
+</html>

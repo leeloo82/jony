@@ -1,0 +1,145 @@
+
+.services-page {
+
+    background: map-get($color, background-second-m-main);
+    padding: 8.5rem 0 0 0;
+
+}
+
+.m-main-services-view-project-wrap {
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+
+        text-transform: capitalize;
+        color: map-get($color, first);
+        font-weight: normal;
+        font-size: 2rem;
+        padding: 1rem;
+
+    }
+
+    .services-view-project-picture {
+
+        margin: 8.5rem 1rem 2rem 1rem;
+
+    }
+
+    p {
+
+        color: map-get($color, paragraph-first );
+        padding: 1rem;
+        
+    }
+
+    
+}
+
+.view-project-link {
+
+    padding: 1rem;
+
+
+    a {
+
+        border: 1px solid map-get($color, second );
+        padding: 1rem 3rem;
+    
+        text-align: center;
+        color: map-get($color, second );
+        text-transform: capitalize;
+        font-weight: bold;
+
+    }
+    
+}
+
+.services-view-project-picture-design {
+
+    margin: 2rem 1rem 8rem 1rem;
+
+}
+
+@media screen and (min-width: 720px){
+    
+    .services-page {
+
+        h3 {
+                color: map-get($color, second );
+                font-size: 1.17rem;
+                font-weight: normal;
+            }
+
+    }
+
+    .m-main-services-view-project-wrap {
+
+        display: flex;
+        flex-direction: row;
+       
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    /*gestion page services*/
+        .services-view-project-content-packaging {
+            margin: 6rem 0 0 0 ;
+    
+            h2,p { 
+                
+                margin: 0 1rem;
+                padding: 1rem;
+    
+            }
+    
+            .view-project-link {
+    
+                padding: 1rem 0;
+                margin: 1rem ;
+    
+            }
+    
+        }/*gestion page services end*/
+    
+}/*media 800px end*/
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    /*gestion page services*/
+    .services-view-project-content-packaging {
+
+        h2,p { 
+            
+            margin: 2rem 0;
+
+        }
+       
+
+        .view-project-link {
+
+            padding: 1rem 0;
+            margin: 1rem ;
+            
+        }
+
+    }
+
+    .services-view-project-content-design {
+
+        .view-project-link {
+
+            padding: .5rem;
+            margin: .5rem ;
+
+        }
+
+    }
+  
+/*gestion page services end*/
+}

@@ -1,0 +1,1563 @@
+@charset "UTF-8";
+/* line 2, sass/base/_general.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* line 11, sass/base/_general.scss */
+html {
+  font-size: 14px;
+  font-family: 'Roboto',sans-serif; }
+
+/* line 17, sass/base/_general.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 24, sass/base/_general.scss */
+img {
+  width: 100%;
+  height: auto; }
+
+/* line 31, sass/base/_general.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 38, sass/base/_general.scss */
+li {
+  list-style: none; }
+
+/* line 44, sass/base/_general.scss */
+a {
+  text-decoration: none; }
+
+/* line 2, sass/layout/_l-header.scss */
+.l-header-logo {
+  width: 5rem;
+  height: 2rem;
+  padding: 1rem; }
+
+/* line 10, sass/layout/_l-header.scss */
+.talk {
+  display: none; }
+
+/* line 18, sass/layout/_l-header.scss */
+.l-header-main h1 {
+  font-weight: normal; }
+  /* line 22, sass/layout/_l-header.scss */
+  .l-header-main h1::first-letter {
+    text-transform: uppercase; }
+
+@media screen and (min-width: 720px) {
+  /* line 35, sass/layout/_l-header.scss */
+  .l-header-logo {
+    width: 8rem;
+    height: 1.5rem;
+    padding: 1rem 1.7rem; }
+  /* line 43, sass/layout/_l-header.scss */
+  .talk {
+    display: block;
+    position: relative;
+    right: 2%;
+    float: right;
+    bottom: 1rem;
+    width: 9rem;
+    height: .5rem;
+    border: 1px solid #db9a64;
+    color: #db9a64;
+    text-align: center;
+    padding: 1rem 2rem 2rem; }
+    /* line 59, sass/layout/_l-header.scss */
+    .talk a {
+      color: #db9a64;
+      text-transform: capitalize;
+      font-weight: bold; }
+  /* line 67, sass/layout/_l-header.scss */
+  .header-home-content-tilte {
+    font-size: 3.5rem;
+    margin: 9rem 0 0 0; }
+  /* line 74, sass/layout/_l-header.scss */
+  .header-home-content-tilte-principal {
+    font-size: 3.5rem; } }
+
+/*media 720px end */
+@media screen and (min-width: 1024px) {
+  /* line 87, sass/layout/_l-header.scss */
+  .header-home-content-tilte {
+    margin: 9rem 0 0 18rem; }
+  /* line 93, sass/layout/_l-header.scss */
+  .header-home-content-tilte-principal {
+    margin-left: 18rem; }
+  /* line 101, sass/layout/_l-header.scss */
+  .header-home-content-text a {
+    margin: 4rem 0 0 18rem; } }
+
+/*media 1024px end */
+/* line 2, sass/layout/_l-nav.scss */
+.icon-burger {
+  position: absolute;
+  left: 89%;
+  top: 1rem; }
+  /* line 8, sass/layout/_l-nav.scss */
+  .icon-burger a {
+    color: #ffffff;
+    font-size: 2rem; }
+
+/* line 18, sass/layout/_l-nav.scss */
+.l-header-nav {
+  display: none;
+  /*pour qu'a l'ouverture le menu ce place au-dessous de tout les éléments*/
+  position: absolute;
+  width: 90%; }
+
+@keyframes translateMenu {
+  0% {
+    transform: translate(-50rem); }
+  100% {
+    transform: translate(0rem); } }
+
+/* line 42, sass/layout/_l-nav.scss */
+.l-header-nav.is-active {
+  display: block;
+  animation: translateMenu 2s; }
+
+/* line 49, sass/layout/_l-nav.scss */
+.l-header-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  margin: 0 1rem; }
+  /* line 57, sass/layout/_l-nav.scss */
+  .l-header-nav-wrap li {
+    margin: .5rem 1rem; }
+    /* line 61, sass/layout/_l-nav.scss */
+    .l-header-nav-wrap li::first-letter {
+      text-transform: uppercase; }
+  /* line 67, sass/layout/_l-nav.scss */
+  .l-header-nav-wrap a {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem; }
+    /* line 74, sass/layout/_l-nav.scss */
+    .l-header-nav-wrap a::first-letter {
+      text-transform: uppercase; }
+    /* line 80, sass/layout/_l-nav.scss */
+    .l-header-nav-wrap a:hover {
+      color: #db9a64;
+      background-color: -get((first: #ffffff, second: #db9a64, third: #000000, color-transparent: #11ffee00, paragraph-first: #c9c9c9, background-nav-pc: #11ffee00, background-primary-m-main: #311e25, background-second-m-main: #3b2930, background-thrid-m-main: #3a292f), third); }
+
+@media screen and (min-width: 720px) {
+  /* line 93, sass/layout/_l-nav.scss */
+  .icon-burger {
+    display: none; }
+  /* line 100, sass/layout/_l-nav.scss */
+  .l-header-nav {
+    display: block; }
+  /* line 106, sass/layout/_l-nav.scss */
+  .l-header-nav-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #11ffee00;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    bottom: 1rem; }
+    /* line 118, sass/layout/_l-nav.scss */
+    .l-header-nav-wrap li {
+      margin: .5rem; }
+    /* line 124, sass/layout/_l-nav.scss */
+    .l-header-nav-wrap a {
+      color: #db9a64; }
+  /*l-header-nav-wrap end*/ }
+
+/*media 720px end*/
+@media screen and (min-width: 1024px) {
+  /* line 136, sass/layout/_l-nav.scss */
+  .l-header-nav-wrap {
+    left: 30%; } }
+
+/* line 3, sass/layout/_l-main.scss */
+.l-main-content {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 1, sass/layout/_l-footer.scss */
+.footer-background {
+  background: url("../pictures/home/banner/BgFooterHome.png");
+  padding: 1rem; }
+
+/* line 10, sass/layout/_l-footer.scss */
+.l-footer-main h1 {
+  color: #ffffff;
+  margin: 4.7rem 1rem 0 1rem;
+  font-size: 1.8rem; }
+  /* line 16, sass/layout/_l-footer.scss */
+  .l-footer-main h1::first-letter {
+    text-transform: uppercase; }
+
+/* line 27, sass/layout/_l-footer.scss */
+.footer-title-link {
+  color: #db9a64;
+  text-transform: capitalize; }
+  /* line 32, sass/layout/_l-footer.scss */
+  .footer-title-link:hover {
+    color: #ffffff; }
+
+/* line 38, sass/layout/_l-footer.scss */
+.footer-background-paragraph-title {
+  color: #c9c9c9;
+  margin: 1rem; }
+
+/* line 45, sass/layout/_l-footer.scss */
+.l-footer-main-title-word {
+  display: inline-block; }
+  /* line 49, sass/layout/_l-footer.scss */
+  .l-footer-main-title-word::first-letter {
+    text-transform: uppercase; }
+
+/* line 57, sass/layout/_l-footer.scss */
+.footer-social-network-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+/* line 64, sass/layout/_l-footer.scss */
+.footer-social-network-wrap-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #db9a64;
+  height: 1rem;
+  padding: 1.5rem 1rem 2.5rem;
+  margin: 1rem 0; }
+  /* line 75, sass/layout/_l-footer.scss */
+  .footer-social-network-wrap-content a {
+    display: inline-block;
+    color: #ffffff; }
+    /* line 80, sass/layout/_l-footer.scss */
+    .footer-social-network-wrap-content a::first-letter {
+      text-transform: uppercase; }
+  /* line 87, sass/layout/_l-footer.scss */
+  .footer-social-network-wrap-content span {
+    color: #db9a64; }
+
+/* line 96, sass/layout/_l-footer.scss */
+.copyright p {
+  text-align: center;
+  color: #c9c9c9;
+  margin: 7rem 0 1rem 0; }
+
+/* line 104, sass/layout/_l-footer.scss */
+.copyright span {
+  display: inline-block; }
+  /* line 108, sass/layout/_l-footer.scss */
+  .copyright span::first-letter {
+    text-transform: uppercase; }
+
+/* line 116, sass/layout/_l-footer.scss */
+.copyright a {
+  display: inline-block;
+  color: #db9a64; }
+  /* line 121, sass/layout/_l-footer.scss */
+  .copyright a:hover {
+    color: #ffffff; }
+  /* line 127, sass/layout/_l-footer.scss */
+  .copyright a::first-letter {
+    text-transform: uppercase; }
+
+/* line 135, sass/layout/_l-footer.scss */
+.copyright p::first-letter {
+  text-transform: uppercase; }
+
+@media screen and (min-width: 720px) {
+  /* line 148, sass/layout/_l-footer.scss */
+  .l-footer-main h1 {
+    margin: 10rem 1rem 0 6rem; }
+  /* line 156, sass/layout/_l-footer.scss */
+  .footer-background-paragraph-title {
+    margin: 1rem 0 7.6rem 6rem;
+    width: 50%; }
+  /* line 162, sass/layout/_l-footer.scss */
+  .footer-social-network-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3%;
+    margin: 0 6rem; } }
+
+@media screen and (min-width: 1024px) {
+  /* line 179, sass/layout/_l-footer.scss */
+  .l-footer-main h1 {
+    margin: 10rem 1rem 0 8rem; }
+  /* line 187, sass/layout/_l-footer.scss */
+  .footer-background-paragraph-title {
+    margin: 1rem 0 7.3rem 8rem;
+    width: 50%; }
+  /* line 194, sass/layout/_l-footer.scss */
+  .footer-social-network-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3%;
+    margin: 0 8rem; } }
+
+/*section about*/
+/* line 2, sass/modules/main/_m-home.scss */
+.m-main-home-about {
+  background: #311e25; }
+
+/* line 7, sass/modules/main/_m-home.scss */
+h2 {
+  margin-top: 0;
+  line-height: 3rem;
+  color: #ffffff; }
+  /* line 13, sass/modules/main/_m-home.scss */
+  h2::first-letter {
+    text-transform: uppercase; }
+
+/* line 23, sass/modules/main/_m-home.scss */
+.l-main-content h2 {
+  padding: 7rem 1rem 1rem 1rem; }
+
+/*propriété spécifique mot clé*/
+/* line 31, sass/modules/main/_m-home.scss */
+.specialty-work {
+  display: inline-block; }
+  /* line 35, sass/modules/main/_m-home.scss */
+  .specialty-work::first-letter {
+    text-transform: uppercase; }
+
+/* line 42, sass/modules/main/_m-home.scss */
+.city {
+  text-transform: capitalize; }
+
+/* line 49, sass/modules/main/_m-home.scss */
+.m-main-progress-bar {
+  margin-bottom: 8rem; }
+
+/* line 55, sass/modules/main/_m-home.scss */
+.m-progress-bar-text-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff; }
+  /* line 63, sass/modules/main/_m-home.scss */
+  .m-progress-bar-text-wrap h4::first-letter {
+    text-transform: uppercase; }
+  /* line 70, sass/modules/main/_m-home.scss */
+  .m-progress-bar-text-wrap p {
+    margin: 1.5rem 0 0 0; }
+
+/* line 76, sass/modules/main/_m-home.scss */
+.m-progress-bar {
+  width: 100%;
+  height: .5rem;
+  background-color: #ffffff;
+  border-radius: 25px; }
+
+/* line 85, sass/modules/main/_m-home.scss */
+.m-progress-bar-intern {
+  display: block;
+  height: .5rem;
+  background-color: #db9a64;
+  border-radius: 25px; }
+
+/* line 94, sass/modules/main/_m-home.scss */
+.m-main-about-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 1rem; }
+
+/* line 103, sass/modules/main/_m-home.scss */
+.m-main-home-about-content p {
+  line-height: 2rem;
+  color: #c9c9c9; }
+
+/* line 111, sass/modules/main/_m-home.scss */
+.m-main-download-cv {
+  width: 9rem;
+  height: 1rem;
+  border: 1px solid #db9a64;
+  margin: 4rem 1rem 2.6rem 0;
+  padding: 1rem 1rem 2rem 1rem;
+  text-align: center; }
+  /* line 121, sass/modules/main/_m-home.scss */
+  .m-main-download-cv a {
+    text-transform: capitalize;
+    color: #db9a64;
+    font-weight: bold; }
+
+/*section about end*/
+/*section service*/
+/* line 133, sass/modules/main/_m-home.scss */
+.services {
+  background: #3b2930;
+  padding: 1rem 0; }
+  /* line 138, sass/modules/main/_m-home.scss */
+  .services h2 {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 2rem; }
+
+/* line 149, sass/modules/main/_m-home.scss */
+.m-main-services-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+  /* line 154, sass/modules/main/_m-home.scss */
+  .m-main-services-wrap h3 {
+    color: #db9a64;
+    font-size: 1.8rem;
+    font-weight: normal; }
+  /* line 161, sass/modules/main/_m-home.scss */
+  .m-main-services-wrap p {
+    color: #c9c9c9; }
+
+/* line 169, sass/modules/main/_m-home.scss */
+.container-service {
+  border: 1px solid #db9a64;
+  text-align: center;
+  margin: 1rem; }
+  /* line 175, sass/modules/main/_m-home.scss */
+  .container-service .m-main-title-service-mobile-design, .container-service .m-main-title-service-web-dev {
+    text-transform: capitalize; }
+  /* line 183, sass/modules/main/_m-home.scss */
+  .container-service .m-main-title-service-ecommerce::first-letter {
+    text-transform: uppercase; }
+  /* line 190, sass/modules/main/_m-home.scss */
+  .container-service .icon-mobile-design {
+    background: url(../pictures/home/iconSvg/mobileDesign.svg) no-repeat; }
+  /* line 196, sass/modules/main/_m-home.scss */
+  .container-service .icon-web-dev {
+    background: url(../pictures/home/iconSvg/webDev.svg) no-repeat; }
+  /* line 202, sass/modules/main/_m-home.scss */
+  .container-service .icon-ecommerce {
+    background: url(../pictures/home/iconSvg/ecommerce.svg) no-repeat; }
+  /* line 208, sass/modules/main/_m-home.scss */
+  .container-service .icon-mobile-design, .container-service .icon-web-dev, .container-service .icon-ecommerce {
+    width: 6rem;
+    height: 5rem;
+    margin: 1rem auto; }
+
+/*section services end*/
+/*section work*/
+/* line 223, sass/modules/main/_m-home.scss */
+.works {
+  background: #311e25;
+  padding: 9rem 1rem 8rem 1rem; }
+  /* line 228, sass/modules/main/_m-home.scss */
+  .works a {
+    display: inline-block;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 2.3rem; }
+  /* line 235, sass/modules/main/_m-home.scss */
+  .works :hover {
+    color: #db9a64; }
+  /* line 241, sass/modules/main/_m-home.scss */
+  .works h3 {
+    color: #db9a64;
+    text-transform: capitalize;
+    margin: .5rem 0 7rem 0; }
+
+/* line 251, sass/modules/main/_m-home.scss */
+.works h2 {
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 0;
+  font-weight: normal;
+  font-size: 2rem; }
+
+/* line 261, sass/modules/main/_m-home.scss */
+.m-main-work-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+/* line 268, sass/modules/main/_m-home.scss */
+.m-main-more-work-link {
+  border: 1px solid #db9a64;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0; }
+
+/* line 277, sass/modules/main/_m-home.scss */
+.m-main-more-work-link a {
+  color: #db9a64;
+  margin: 1rem; }
+
+/* section works end*/
+/*module partiellement générale*
+        /*section client-say*/
+/* line 288, sass/modules/main/_m-home.scss */
+.client-say {
+  background: #3b2930;
+  padding: 1rem 0 3.5rem 1rem; }
+  /* line 293, sass/modules/main/_m-home.scss */
+  .client-say h2 {
+    color: #ffffff;
+    margin-top: 4rem;
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 0; }
+  /* line 303, sass/modules/main/_m-home.scss */
+  .client-say p {
+    color: #c9c9c9; }
+  /* line 308, sass/modules/main/_m-home.scss */
+  .client-say .client-say-title-principal {
+    text-transform: capitalize; }
+
+/* line 316, sass/modules/main/_m-home.scss */
+.client-say-profil-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem; }
+  /* line 322, sass/modules/main/_m-home.scss */
+  .client-say-profil-wrap img {
+    width: 4rem; }
+
+/* line 330, sass/modules/main/_m-home.scss */
+.client-say-profil-wrap-content h3 {
+  color: #db9a64;
+  text-transform: capitalize;
+  margin: .5rem; }
+
+/* line 338, sass/modules/main/_m-home.scss */
+.client-say-profil-wrap-content h4 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: .7rem;
+  margin: .5rem; }
+
+/* line 347, sass/modules/main/_m-home.scss */
+.client-say-profil-wrap-content .speciality-work {
+  font-weight: normal; }
+
+@media screen and (min-width: 720px) {
+  /*section about*/
+  /* line 358, sass/modules/main/_m-home.scss */
+  .m-main-home-about h2 {
+    padding: 7rem 1rem 1rem 5rem;
+    width: 75%;
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: normal; }
+  /* line 369, sass/modules/main/_m-home.scss */
+  .specialty-work, .city {
+    font-weight: normal; }
+  /* line 374, sass/modules/main/_m-home.scss */
+  .m-main-about-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10%;
+    margin: 0 auto;
+    padding: 0 5rem; }
+  /*section about end*/
+  /*section service*/
+  /* line 390, sass/modules/main/_m-home.scss */
+  .services h2 {
+    padding: 7rem 1rem 1rem 3.8rem; }
+  /* line 398, sass/modules/main/_m-home.scss */
+  .m-main-services-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 0 3rem; }
+    /* line 405, sass/modules/main/_m-home.scss */
+    .m-main-services-wrap h3 {
+      color: #db9a64;
+      font-size: 1.17rem;
+      font-weight: normal; }
+  /*section works*/
+  /* line 414, sass/modules/main/_m-home.scss */
+  .m-main-work-title {
+    margin: 0 0 1rem 5rem; }
+  /* line 420, sass/modules/main/_m-home.scss */
+  .m-main-work-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    margin: 0 auto;
+    padding: 0 9rem; }
+    /* line 428, sass/modules/main/_m-home.scss */
+    .m-main-work-wrap .m-main-work-wrap-content-4 {
+      position: relative;
+      bottom: 18%; }
+  /*gestion work end*/
+  /*gestion page services*/
+  /* line 442, sass/modules/main/_m-home.scss */
+  .services-page h3 {
+    color: #db9a64;
+    font-size: 1.17rem;
+    font-weight: normal; }
+  /*section service end*/
+  /*section client-say*/
+  /* line 454, sass/modules/main/_m-home.scss */
+  .client-say {
+    padding: 1rem 0 8rem 6rem; }
+  /*section client-say end*/ }
+
+/* line 3, sass/modules/main/_m-works.scss */
+.header-works-detail-content-text h1 {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 7rem 0 17rem 0;
+  text-align: center; }
+
+/* line 17, sass/modules/main/_m-works.scss */
+.works-details {
+  background: #311e25;
+  padding: 1rem; }
+
+/* line 24, sass/modules/main/_m-works.scss */
+.work-detail-content {
+  position: relative;
+  bottom: 10rem; }
+
+/* line 31, sass/modules/main/_m-works.scss */
+.work-detail-content-text {
+  margin: 2rem 0 0 0; }
+  /* line 35, sass/modules/main/_m-works.scss */
+  .work-detail-content-text h2 {
+    color: #ffffff;
+    font-weight: normal;
+    padding: 7rem 1rem 1rem 0; }
+    /* line 41, sass/modules/main/_m-works.scss */
+    .work-detail-content-text h2::first-letter {
+      text-transform: uppercase; }
+  /* line 48, sass/modules/main/_m-works.scss */
+  .work-detail-content-text p {
+    color: #c9c9c9;
+    line-height: 2rem; }
+  /* line 54, sass/modules/main/_m-works.scss */
+  .work-detail-content-text .project-link {
+    border: 1px solid #db9a64;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 2.7rem 0 4rem 0; }
+    /* line 63, sass/modules/main/_m-works.scss */
+    .work-detail-content-text .project-link a {
+      color: #db9a64;
+      font-weight: bold;
+      text-transform: capitalize; }
+
+@media screen and (min-width: 720px) {
+  /* line 77, sass/modules/main/_m-works.scss */
+  .works-details {
+    background: #311e25;
+    padding: 1rem 13rem; } }
+
+@media screen and (min-width: 1000px) {
+  /* line 89, sass/modules/main/_m-works.scss */
+  .work-detail-content-text {
+    margin: 4rem 10rem 0 10rem; } }
+
+/* line 2, sass/modules/main/_m-services.scss */
+.services-page {
+  background: #3b2930;
+  padding: 8.5rem 0 0 0; }
+
+/* line 9, sass/modules/main/_m-services.scss */
+.m-main-services-view-project-wrap {
+  display: flex;
+  flex-direction: column; }
+  /* line 14, sass/modules/main/_m-services.scss */
+  .m-main-services-view-project-wrap h2 {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 1rem; }
+  /* line 24, sass/modules/main/_m-services.scss */
+  .m-main-services-view-project-wrap .services-view-project-picture {
+    margin: 8.5rem 1rem 2rem 1rem; }
+  /* line 30, sass/modules/main/_m-services.scss */
+  .m-main-services-view-project-wrap p {
+    color: #c9c9c9;
+    padding: 1rem; }
+
+/* line 40, sass/modules/main/_m-services.scss */
+.view-project-link {
+  padding: 1rem; }
+  /* line 45, sass/modules/main/_m-services.scss */
+  .view-project-link a {
+    border: 1px solid #db9a64;
+    padding: 1rem 3rem;
+    text-align: center;
+    color: #db9a64;
+    text-transform: capitalize;
+    font-weight: bold; }
+
+/* line 59, sass/modules/main/_m-services.scss */
+.services-view-project-picture-design {
+  margin: 2rem 1rem 8rem 1rem; }
+
+@media screen and (min-width: 720px) {
+  /* line 69, sass/modules/main/_m-services.scss */
+  .services-page h3 {
+    color: #db9a64;
+    font-size: 1.17rem;
+    font-weight: normal; }
+  /* line 77, sass/modules/main/_m-services.scss */
+  .m-main-services-view-project-wrap {
+    display: flex;
+    flex-direction: row; } }
+
+@media screen and (min-width: 800px) {
+  /*gestion page services*/
+  /* line 88, sass/modules/main/_m-services.scss */
+  .services-view-project-content-packaging {
+    margin: 6rem 0 0 0; }
+    /* line 91, sass/modules/main/_m-services.scss */
+    .services-view-project-content-packaging h2, .services-view-project-content-packaging p {
+      margin: 0 1rem;
+      padding: 1rem; }
+    /* line 98, sass/modules/main/_m-services.scss */
+    .services-view-project-content-packaging .view-project-link {
+      padding: 1rem 0;
+      margin: 1rem; }
+  /*gestion page services end*/ }
+
+/*media 800px end*/
+@media screen and (min-width: 1000px) {
+  /*gestion page services*/
+  /* line 117, sass/modules/main/_m-services.scss */
+  .services-view-project-content-packaging h2, .services-view-project-content-packaging p {
+    margin: 2rem 0; }
+  /* line 124, sass/modules/main/_m-services.scss */
+  .services-view-project-content-packaging .view-project-link {
+    padding: 1rem 0;
+    margin: 1rem; }
+  /* line 135, sass/modules/main/_m-services.scss */
+  .services-view-project-content-design .view-project-link {
+    padding: .5rem;
+    margin: .5rem; }
+  /*gestion page services end*/ }
+
+/* line 1, sass/modules/main/_m-contact.scss */
+.m-main-contact-map {
+  display: none; }
+
+/* line 7, sass/modules/main/_m-contact.scss */
+.m-main-contact-title-principal {
+  margin: 5.5rem 0 2rem 1rem; }
+  /* line 11, sass/modules/main/_m-contact.scss */
+  .m-main-contact-title-principal::first-letter {
+    text-transform: capitalize; }
+
+/* line 17, sass/modules/main/_m-contact.scss */
+.style-m-main-contact-title-principal {
+  display: inline-block; }
+  /* line 21, sass/modules/main/_m-contact.scss */
+  .style-m-main-contact-title-principal::first-letter {
+    text-transform: capitalize; }
+
+/* line 28, sass/modules/main/_m-contact.scss */
+.m-main-contact-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 1rem 4rem 1rem; }
+
+/* line 40, sass/modules/main/_m-contact.scss */
+.form-contact textarea {
+  border: 1px solid #e5e6e9;
+  padding: .5rem 0 .5rem .2rem;
+  color: #e5e6e9;
+  text-transform: capitalize; }
+
+/* line 49, sass/modules/main/_m-contact.scss */
+.form-contact .style-champ-specific-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem; }
+
+/* line 57, sass/modules/main/_m-contact.scss */
+.form-contact .input-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+/* line 64, sass/modules/main/_m-contact.scss */
+.form-contact input {
+  display: block;
+  margin: 2rem 0;
+  border: 1px solid #e5e6e9;
+  padding: 1rem 7.7rem 1rem 1rem; }
+  /* line 71, sass/modules/main/_m-contact.scss */
+  .form-contact input::placeholder {
+    color: #e5e6e9;
+    text-transform: capitalize; }
+
+/* line 79, sass/modules/main/_m-contact.scss */
+.form-contact .send {
+  text-transform: uppercase;
+  padding: 1.3rem 4rem;
+  color: #db9a64;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid #db9a64;
+  margin: 3rem 0 2rem 0; }
+
+/* line 95, sass/modules/main/_m-contact.scss */
+.m-main-contact-container-element-contact span {
+  font-size: 1.7rem;
+  color: #929195; }
+
+/* line 102, sass/modules/main/_m-contact.scss */
+.m-main-contact-container-element-contact .text {
+  /*application width pour palier au debordement de la div text*/
+  width: 80%;
+  position: relative;
+  left: 3rem;
+  bottom: 3rem; }
+  /* line 110, sass/modules/main/_m-contact.scss */
+  .m-main-contact-container-element-contact .text h2 {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 0; }
+  /* line 118, sass/modules/main/_m-contact.scss */
+  .m-main-contact-container-element-contact .text p {
+    margin: 0;
+    color: #8a8a8a;
+    font-size: 1.2rem; }
+    /* line 124, sass/modules/main/_m-contact.scss */
+    .m-main-contact-container-element-contact .text p::first-letter {
+      text-transform: uppercase; }
+
+/* line 133, sass/modules/main/_m-contact.scss */
+.m-main-contact-container-element-contact .text-style {
+  text-transform: capitalize; }
+
+/* line 139, sass/modules/main/_m-contact.scss */
+.m-main-contact-container-element-contact .text-style-specific {
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+/* line 146, sass/modules/main/_m-contact.scss */
+.m-main-contact-container-element-contact .text-style-specific-word {
+  text-transform: initial;
+  font-size: 1.2rem; }
+
+/*gestion page contact end*/
+@media screen and (min-width: 720px) {
+  /* line 156, sass/modules/main/_m-contact.scss */
+  .m-main-contact-map {
+    display: block;
+    margin: 6rem 6rem; }
+  /* line 163, sass/modules/main/_m-contact.scss */
+  .m-main-contact-title-principal {
+    margin: 5.5rem 0 2rem 6rem; }
+  /* line 169, sass/modules/main/_m-contact.scss */
+  .m-main-contact-wrap {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 2.5rem;
+    margin: 0 2rem 0 6rem; }
+  /* line 180, sass/modules/main/_m-contact.scss */
+  .form-contact .style-champ-specific-wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: .1rem; } }
+
+/*traiment page home*/
+/* line 3, sass/modules/_m-header.scss */
+.m-header-background-home {
+  background: url("../pictures/home/banner/BgHeaderHome.png") no-repeat;
+  padding-bottom: 9rem;
+  background-size: 100% 100%; }
+
+/* line 11, sass/modules/_m-header.scss */
+.header-home-content-text {
+  padding: 3rem 1.7rem 0 1.7rem; }
+  /* line 15, sass/modules/_m-header.scss */
+  .header-home-content-text .header-home-content-tilte {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 2rem; }
+  /* line 24, sass/modules/_m-header.scss */
+  .header-home-content-text .header-home-content-tilte-principal {
+    color: #db9a64;
+    text-transform: capitalize;
+    font-weight: normal; }
+  /* line 32, sass/modules/_m-header.scss */
+  .header-home-content-text a {
+    display: block;
+    width: 13rem;
+    height: 1rem;
+    border: 2px solid #db9a64;
+    color: #db9a64;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 1.5rem 3.5rem 2.5rem;
+    margin-top: 4rem;
+    font-size: 1rem; }
+
+/*traiment page home*/
+/*traitement page works*/
+/* line 52, sass/modules/_m-header.scss */
+.header-background-work {
+  background: url("../pictures/work/worksBg.png") no-repeat;
+  padding-bottom: 1rem;
+  background-size: 100% 100%; }
+
+/* line 60, sass/modules/_m-header.scss */
+.header-works-content-text {
+  color: #ffffff;
+  text-align: center;
+  margin: 12rem 0 14rem 0; }
+
+/*traitement page works end*/
+/*service*/
+/*traitement page about*/
+/* line 75, sass/modules/_m-header.scss */
+.header-about-content-tilte .city {
+  font-weight: normal; }
+
+/* line 82, sass/modules/_m-header.scss */
+.header-about-content-text {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 1rem;
+  text-align: center;
+  margin: 7rem 0 0 0; }
+  /* line 90, sass/modules/_m-header.scss */
+  .header-about-content-text .header-about-content-tilte {
+    font-weight: normal; }
+  /* line 96, sass/modules/_m-header.scss */
+  .header-about-content-text .about-link-view-work {
+    margin-top: 3rem;
+    padding-bottom: 10rem; }
+  /* line 103, sass/modules/_m-header.scss */
+  .header-about-content-text a {
+    width: 6rem;
+    border: 2px solid #db9a64;
+    color: #db9a64;
+    text-align: center;
+    font-weight: bold;
+    padding: 1.5rem 3.5rem;
+    font-size: 1rem; }
+
+/*traitement page about end*/
+/*traitement page blog*/
+/* line 120, sass/modules/_m-header.scss */
+.header-background-blog {
+  background: url("../pictures/home/banner/bradcam.png") no-repeat;
+  background-size: 100% 100%; }
+  /* line 125, sass/modules/_m-header.scss */
+  .header-background-blog .title-blog {
+    position: relative;
+    bottom: 7rem;
+    font-size: 2rem;
+    font-weight: normal; }
+
+@media screen and (min-width: 720px) {
+  /*gestion page home*/
+  /* line 140, sass/modules/_m-header.scss */
+  .m-header-background-home {
+    background: url("../pictures/home/pictureJony.png") no-repeat bottom left 95%, url("../pictures/home/banner/BgHeaderHome.png") no-repeat;
+    padding-bottom: 9rem;
+    position: relative;
+    background-size: 23rem auto, 100% 100%; }
+  /*gestion page works*/
+  /* line 152, sass/modules/_m-header.scss */
+  .header-works-content-text h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 7rem 0 10rem 0;
+    font-weight: normal;
+    font-size: 2rem; }
+    /* line 159, sass/modules/_m-header.scss */
+    .header-works-content-text h1::first-letter {
+      text-transform: uppercase; }
+  /*traitement page about*/
+  /* line 168, sass/modules/_m-header.scss */
+  .header-about-content-text {
+    font-size: 2rem;
+    margin: 14rem 0 0 0; }
+    /* line 173, sass/modules/_m-header.scss */
+    .header-about-content-text .about-link-view-work {
+      margin-top: 5rem;
+      padding-bottom: 18rem; } }
+
+/*media 720px end*/
+/* line 2, sass/modules/main/_m-blog.scss */
+.blog {
+  background: #fefefe; }
+
+/* line 7, sass/modules/main/_m-blog.scss */
+.container-blog-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1rem; }
+
+/* line 15, sass/modules/main/_m-blog.scss */
+.container-article {
+  background: #ffffff;
+  position: relative;
+  bottom: 4rem; }
+  /* line 21, sass/modules/main/_m-blog.scss */
+  .container-article h2 {
+    margin-top: -3rem;
+    padding: 0; }
+    /* line 26, sass/modules/main/_m-blog.scss */
+    .container-article h2 a {
+      color: #001d38;
+      font-size: 1.2rem; }
+      /* line 32, sass/modules/main/_m-blog.scss */
+      .container-article h2 a:hover {
+        transition: font-size 1s;
+        font-size: 1.5rem;
+        color: #db9a64; }
+  /* line 42, sass/modules/main/_m-blog.scss */
+  .container-article .blog-details {
+    width: 80%;
+    margin: 0; }
+
+/* line 50, sass/modules/main/_m-blog.scss */
+.container-date-content {
+  width: 3.8rem;
+  height: 5rem;
+  background: #f91842;
+  border-radius: .3rem;
+  text-align: center;
+  padding: .2rem;
+  position: relative;
+  left: .5rem;
+  bottom: 4.5rem; }
+
+/* line 64, sass/modules/main/_m-blog.scss */
+.date-number {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0 0; }
+
+/* line 74, sass/modules/main/_m-blog.scss */
+.date-month {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem; }
+
+/* line 81, sass/modules/main/_m-blog.scss */
+.container-article-content {
+  margin: 0 .5rem; }
+  /* line 85, sass/modules/main/_m-blog.scss */
+  .container-article-content p {
+    line-height: 1.5rem;
+    color: #4d4d4d; }
+
+/* line 94, sass/modules/main/_m-blog.scss */
+.container-link-wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 1.7rem 0;
+  color: #666666; }
+  /* line 101, sass/modules/main/_m-blog.scss */
+  .container-link-wrap a {
+    color: #666666;
+    text-transform: capitalize;
+    font-weight: bold; }
+    /* line 107, sass/modules/main/_m-blog.scss */
+    .container-link-wrap a:hover {
+      color: #db9a64; }
+
+/*container-link-wrap end*/
+/* line 117, sass/modules/main/_m-blog.scss */
+.container-content-link-travel::after {
+  content: "|";
+  margin: 0 .7rem; }
+
+/* line 126, sass/modules/main/_m-blog.scss */
+.fas {
+  margin: 0 .7rem 0 0; }
+
+/* line 132, sass/modules/main/_m-blog.scss */
+.container-slider-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem; }
+
+/* line 142, sass/modules/main/_m-blog.scss */
+.box {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #f0e9ff;
+  margin: 0 .3rem; }
+  /* line 149, sass/modules/main/_m-blog.scss */
+  .box a {
+    display: block;
+    padding: .9rem;
+    color: black; }
+    /* line 155, sass/modules/main/_m-blog.scss */
+    .box a:active {
+      background: #fbf8ff; }
+  /* line 163, sass/modules/main/_m-blog.scss */
+  .box .fas {
+    margin: .1rem 0; }
+
+/* gestion aside*/
+/* line 173, sass/modules/main/_m-blog.scss */
+.container-aside {
+  margin: 3.5rem 0 0 0; }
+  /* line 177, sass/modules/main/_m-blog.scss */
+  .container-aside h2 {
+    border-bottom: 1px solid #f0e9ff;
+    padding: 0 0 1rem 0;
+    margin-bottom: 3.5rem;
+    text-transform: capitalize;
+    color: #001d38; }
+
+/* line 188, sass/modules/main/_m-blog.scss */
+.container-aside-content {
+  background: #fbf9ff;
+  padding: 2.2rem;
+  margin: 2rem 0; }
+
+/* line 196, sass/modules/main/_m-blog.scss */
+.search {
+  margin: 0; }
+  /* line 200, sass/modules/main/_m-blog.scss */
+  .search input {
+    display: block;
+    width: 100%;
+    padding: .5rem 1.4rem;
+    border: 1px solid #f0e9ff;
+    text-transform: capitalize; }
+    /* line 209, sass/modules/main/_m-blog.scss */
+    .search input::placeholder {
+      color: #9c9999; }
+  /* line 216, sass/modules/main/_m-blog.scss */
+  .search a {
+    position: relative;
+    bottom: 1.5rem;
+    float: right;
+    color: #9c9999; }
+  /* line 226, sass/modules/main/_m-blog.scss */
+  .search .button {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .9rem 5.4rem;
+    color: #db9a64;
+    border: 1px solid #db9a64;
+    background: #ffffff; }
+
+/*search end*/
+/* line 241, sass/modules/main/_m-blog.scss */
+.container-category .container-category-link {
+  border-bottom: 1px solid #f0e9ff; }
+
+/* line 247, sass/modules/main/_m-blog.scss */
+.container-category a {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 0 0 0;
+  text-transform: capitalize;
+  color: #4d4d4d;
+  font-size: 1.2rem; }
+  /* line 256, sass/modules/main/_m-blog.scss */
+  .container-category a:hover {
+    background: #666666;
+    color: #db9a64; }
+
+/* line 265, sass/modules/main/_m-blog.scss */
+.container-recente-post-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1.5rem;
+  margin: .7rem 0; }
+
+/* line 276, sass/modules/main/_m-blog.scss */
+.container-recente-post-content-wrap h3 {
+  text-transform: capitalize;
+  font-size: .8rem; }
+
+/* line 282, sass/modules/main/_m-blog.scss */
+.container-recente-post-content-wrap p {
+  color: #4d4d4d;
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: capitalize; }
+
+/* line 293, sass/modules/main/_m-blog.scss */
+.container-tag-cloud-link {
+  display: inline-block;
+  border: 1px solid #f0e9ff;
+  text-align: center;
+  margin: .5rem .2rem;
+  background: white; }
+  /* line 302, sass/modules/main/_m-blog.scss */
+  .container-tag-cloud-link a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: #666666; }
+    /* line 308, sass/modules/main/_m-blog.scss */
+    .container-tag-cloud-link a:hover {
+      background: #db9a64; }
+
+/* line 316, sass/modules/main/_m-blog.scss */
+.container-instagram-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: .9rem;
+  row-gap: .8rem; }
+
+/* line 328, sass/modules/main/_m-blog.scss */
+.container-newsletter-formulaire input {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+  padding: 1rem 2rem;
+  border: 1px solid #f0e9ff;
+  text-transform: capitalize; }
+  /* line 337, sass/modules/main/_m-blog.scss */
+  .container-newsletter-formulaire input::placeholder {
+    color: #9c9999; }
+
+/* line 345, sass/modules/main/_m-blog.scss */
+.container-newsletter-formulaire .button {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1.2rem 5.3rem;
+  color: #db9a64;
+  border: 1px solid #db9a64;
+  background: #ffffff; }
+
+/*gestion page blog détail*/
+/* line 359, sass/modules/main/_m-blog.scss */
+.container-article {
+  padding: 0 0 1rem 0; }
+
+/* line 365, sass/modules/main/_m-blog.scss */
+.container-citation {
+  border: 20px solid #f2f3f7; }
+
+/* line 371, sass/modules/main/_m-blog.scss */
+.container-citation-content {
+  padding: 1rem;
+  border-left: 3px solid #888888; }
+
+/* line 378, sass/modules/main/_m-blog.scss */
+.container-social-network-wrap {
+  display: flex;
+  flex-direction: column; }
+
+/*container-social-network-wrap end*/
+/* line 384, sass/modules/main/_m-blog.scss */
+.container-social-network-content {
+  margin: 1.5rem 0 0 0;
+  text-align: center;
+  color: #4d4d4d; }
+  /* line 391, sass/modules/main/_m-blog.scss */
+  .container-social-network-content p {
+    display: inline-block;
+    margin: 0 0 0 1rem; }
+    /* line 396, sass/modules/main/_m-blog.scss */
+    .container-social-network-content p::first-letter {
+      text-transform: uppercase; }
+
+/* line 405, sass/modules/main/_m-blog.scss */
+.social-network-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0 2rem 2rem; }
+  /* line 412, sass/modules/main/_m-blog.scss */
+  .social-network-wrap a {
+    margin: 0 .8rem;
+    color: #999999;
+    font-size: 1.5rem; }
+    /* line 418, sass/modules/main/_m-blog.scss */
+    .social-network-wrap a:hover {
+      color: #db9a64; }
+
+/* line 426, sass/modules/main/_m-blog.scss */
+.container-post-wrap {
+  border-bottom: 1px solid #f0e9ff;
+  margin-bottom: 2rem; }
+  /* line 431, sass/modules/main/_m-blog.scss */
+  .container-post-wrap a {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #4d4d4d; }
+  /* line 440, sass/modules/main/_m-blog.scss */
+  .container-post-wrap h3 {
+    margin: .5rem 0 0 0;
+    color: #4d4d4d; }
+    /* line 445, sass/modules/main/_m-blog.scss */
+    .container-post-wrap h3::first-letter {
+      text-transform: uppercase; }
+
+/*container-post-wrap end*/
+/* line 455, sass/modules/main/_m-blog.scss */
+.container-post-prevo-wrap {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 1rem; }
+
+/* line 463, sass/modules/main/_m-blog.scss */
+.container-post-next-wrap {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  column-gap: 1rem;
+  margin: 3rem 1.5rem 3rem 0; }
+
+/* line 472, sass/modules/main/_m-blog.scss */
+.container-post-next-content {
+  text-align: right; }
+  /* line 476, sass/modules/main/_m-blog.scss */
+  .container-post-next-content a {
+    margin: 0 0 0 3rem; }
+
+/* line 484, sass/modules/main/_m-blog.scss */
+.container-auteur {
+  margin: 3rem 0; }
+
+/* line 489, sass/modules/main/_m-blog.scss */
+.container-article-auteur {
+  background: #fbf9ff; }
+
+/* line 494, sass/modules/main/_m-blog.scss */
+.container-auteur-content-wrap {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 1rem;
+  padding: 1rem .5rem; }
+
+/* line 504, sass/modules/main/_m-blog.scss */
+.picture-author {
+  margin: 4rem 0 0 0; }
+
+/* line 512, sass/modules/main/_m-blog.scss */
+.author-content-text h2 {
+  margin: 1rem 0 0 0;
+  color: #001d38; }
+  /* line 517, sass/modules/main/_m-blog.scss */
+  .author-content-text h2::first-letter {
+    text-transform: uppercase; }
+
+/* line 523, sass/modules/main/_m-blog.scss */
+.author-content-text p {
+  color: #4d4d4d;
+  margin-top: 0; }
+
+/* line 531, sass/modules/main/_m-blog.scss */
+.container-comments {
+  border-top: 1px solid #f0e9ff;
+  border-bottom: 1px solid #f0e9ff;
+  padding: 3rem 0;
+  margin: 0 0 3rem 0; }
+  /* line 539, sass/modules/main/_m-blog.scss */
+  .container-comments h2 {
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    color: #001d38; }
+
+/*container-comments end*/
+/* line 549, sass/modules/main/_m-blog.scss */
+.container-comments-wrap {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: .5rem; }
+
+/* line 557, sass/modules/main/_m-blog.scss */
+.picture-comment {
+  margin: .5rem 0 0 0; }
+
+/* line 564, sass/modules/main/_m-blog.scss */
+.container-comment-content p {
+  color: #777777; }
+
+/* line 570, sass/modules/main/_m-blog.scss */
+.container-comment-content-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: .8rem; }
+  /* line 576, sass/modules/main/_m-blog.scss */
+  .container-comment-content-wrap h3 {
+    text-transform: capitalize;
+    color: #666666; }
+  /* line 582, sass/modules/main/_m-blog.scss */
+  .container-comment-content-wrap time {
+    font-size: .9rem;
+    margin-top: 1.2rem;
+    color: #777777; }
+    /* line 588, sass/modules/main/_m-blog.scss */
+    .container-comment-content-wrap time::first-letter {
+      text-transform: uppercase; }
+  /* line 594, sass/modules/main/_m-blog.scss */
+  .container-comment-content-wrap a {
+    text-transform: uppercase;
+    margin: 1.3rem .6rem 0 0;
+    color: #666666;
+    font-weight: bold; }
+    /* line 601, sass/modules/main/_m-blog.scss */
+    .container-comment-content-wrap a:hover {
+      color: #db9a64; }
+
+/* line 613, sass/modules/main/_m-blog.scss */
+.container-reply h2 {
+  margin-top: 1.5rem; }
+
+/* line 618, sass/modules/main/_m-blog.scss */
+.container-reply span {
+  display: inline-block; }
+  /* line 622, sass/modules/main/_m-blog.scss */
+  .container-reply span::first-letter {
+    text-transform: uppercase; }
+
+/* line 630, sass/modules/main/_m-blog.scss */
+.form-reply-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%; }
+  /* line 637, sass/modules/main/_m-blog.scss */
+  .form-reply-wrap textarea {
+    margin: 0 0 .5rem 0;
+    border: 1px solid #e5e6e9;
+    padding: .5rem .8rem .5rem 1rem;
+    color: #e5e6e9;
+    text-transform: capitalize; }
+  /* line 647, sass/modules/main/_m-blog.scss */
+  .form-reply-wrap input {
+    margin: 1rem 0;
+    padding: 1rem 7rem 1rem 1rem;
+    border: 1px solid #e5e6e9;
+    text-transform: capitalize; }
+  /* line 656, sass/modules/main/_m-blog.scss */
+  .form-reply-wrap .send {
+    text-transform: uppercase;
+    padding: 1.3rem 4rem;
+    color: #db9a64;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #db9a64;
+    margin: 3rem 0 2rem 0; }
+
+/* line 670, sass/modules/main/_m-blog.scss */
+.input-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+@media screen and (min-width: 720px) {
+  /* line 680, sass/modules/main/_m-blog.scss */
+  .container-blog-wrap {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 0 2rem;
+    column-gap: 1rem; }
+  /* line 689, sass/modules/main/_m-blog.scss */
+  .container-article {
+    bottom: 8rem; }
+  /* line 695, sass/modules/main/_m-blog.scss */
+  .container-aside {
+    margin: 0;
+    position: relative;
+    bottom: 8rem; }
+    /* line 701, sass/modules/main/_m-blog.scss */
+    .container-aside h2 {
+      font-size: 1rem;
+      margin-bottom: 1rem; }
+  /* line 709, sass/modules/main/_m-blog.scss */
+  .container-aside-content {
+    padding: 1rem;
+    margin: 0 0 1rem 0; }
+  /* line 719, sass/modules/main/_m-blog.scss */
+  .search input {
+    font-size: .8rem; }
+  /* line 724, sass/modules/main/_m-blog.scss */
+  .search .button {
+    padding: .9rem 4.9rem; }
+  /*search end*/
+  /* line 736, sass/modules/main/_m-blog.scss */
+  .category .container-category .container-category-link {
+    border-bottom: 1px solid #f0e9ff; }
+  /* line 742, sass/modules/main/_m-blog.scss */
+  .category .container-category a {
+    margin: .5rem 0;
+    padding: .5rem 0 0 0;
+    font-size: 1rem; }
+  /*category end*/
+  /* line 754, sass/modules/main/_m-blog.scss */
+  .container-recente-post-content-wrap h3 {
+    font-size: .9rem; }
+  /* line 760, sass/modules/main/_m-blog.scss */
+  .container-recente-post-content-wrap p {
+    font-size: 1rem; }
+  /* line 770, sass/modules/main/_m-blog.scss */
+  .container-tag-cloud-link a {
+    font-size: .8rem; }
+  /* line 782, sass/modules/main/_m-blog.scss */
+  .container-newsletter-formulaire input {
+    font-size: .8rem; }
+  /* line 788, sass/modules/main/_m-blog.scss */
+  .container-newsletter-formulaire .button {
+    padding: 1.2rem 5rem; }
+  /*gestion page blog details*/
+  /* line 797, sass/modules/main/_m-blog.scss */
+  .container-social-network-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  /*container-social-network-wrap end*/
+  /* line 805, sass/modules/main/_m-blog.scss */
+  .social-network-wrap {
+    margin: -.5rem 0 2rem 0; }
+    /* line 809, sass/modules/main/_m-blog.scss */
+    .social-network-wrap a {
+      padding: 2rem 0;
+      font-size: 1rem; }
+  /* line 818, sass/modules/main/_m-blog.scss */
+  .container-post-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem; }
+    /* line 824, sass/modules/main/_m-blog.scss */
+    .container-post-wrap a {
+      font-size: 1rem; }
+    /* line 830, sass/modules/main/_m-blog.scss */
+    .container-post-wrap h3 {
+      margin: 0;
+      font-size: .9rem; }
+  /* line 840, sass/modules/main/_m-blog.scss */
+  .container-post-prevo-wrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 1.5rem; }
+  /* line 848, sass/modules/main/_m-blog.scss */
+  .container-post-next-wrap {
+    grid-template-columns: 70% 30%;
+    margin: 0rem 1.5rem 3rem 0; }
+  /* line 855, sass/modules/main/_m-blog.scss */
+  .picture-author {
+    margin: 2rem 0 0 0; }
+  /* line 861, sass/modules/main/_m-blog.scss */
+  .container-comments-wrap {
+    margin: 2rem 0; }
+  /* line 868, sass/modules/main/_m-blog.scss */
+  .container-comment-content-wrap p {
+    font-size: .8rem; }
+  /* line 876, sass/modules/main/_m-blog.scss */
+  .input-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem; } }
+
+/*720px end*/
+@media screen and (min-width: 1024px) {
+  /* line 888, sass/modules/main/_m-blog.scss */
+  .container-blog-wrap {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 0 8rem;
+    column-gap: 1rem; } }

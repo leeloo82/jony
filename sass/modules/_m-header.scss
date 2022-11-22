@@ -1,0 +1,185 @@
+/*traiment page home*/
+
+.m-header-background-home {
+
+    background : url("../pictures/home/banner/BgHeaderHome.png") no-repeat  ;
+    padding-bottom: 9rem;
+    background-size: 100% 100%;
+
+}
+
+.header-home-content-text {
+
+    padding: 3rem 1.7rem 0 1.7rem;
+
+    .header-home-content-tilte {
+
+        color: map-get($color, first);
+        text-transform: capitalize;
+        font-weight: normal;
+        font-size: 2rem;
+
+    }
+
+    .header-home-content-tilte-principal {
+
+        color: map-get($color, second);
+        text-transform: capitalize;
+        font-weight: normal;
+
+    }
+
+    a {
+
+        display: block;
+        width: 13rem;
+        height: 1rem;
+        border: 2px solid map-get($color, second);
+        color: map-get($color, second);
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 1.5rem 3.5rem 2.5rem;
+        margin-top: 4rem;
+        
+        font-size: 1rem; 
+
+    }
+
+}/*traiment page home*/
+
+/*traitement page works*/
+.header-background-work {
+
+    background : url("../pictures/work/worksBg.png") no-repeat  ;
+    padding-bottom: 1rem;
+    background-size: 100% 100%;
+    
+}
+
+.header-works-content-text {
+
+    color: map-get($color, first);
+    text-align: center;
+    margin: 12rem 0 14rem 0;
+
+   
+}
+/*traitement page works end*/
+
+/*service*/
+
+/*traitement page about*/
+ .header-about-content-tilte {
+
+   .city {
+
+        font-weight: normal;
+
+    }
+ }
+
+.header-about-content-text {
+
+    color: map-get($color, first);
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+    margin: 7rem 0 0 0 ;
+
+    .header-about-content-tilte {
+
+        font-weight: normal;
+
+    }
+
+    .about-link-view-work {
+
+        margin-top: 3rem;
+        padding-bottom: 10rem;
+
+    }
+
+    a {
+
+        width: 6rem;
+        border: 2px solid map-get($color, second);
+        color: map-get($color, second);
+        text-align: center;
+        font-weight: bold;
+        padding: 1.5rem 3.5rem;
+        
+        font-size: 1rem; 
+
+    }
+         
+}
+/*traitement page about end*/
+/*traitement page blog*/
+
+.header-background-blog {
+
+    background : url("../pictures/home/banner/bradcam.png") no-repeat  ;
+    background-size: 100% 100%;
+
+    .title-blog {
+
+        position: relative;
+        bottom: 7rem;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+}
+
+
+@media screen and (min-width: 720px) {
+
+    /*gestion page home*/
+
+    .m-header-background-home {
+
+        background : url("../pictures/home/pictureJony.png") no-repeat bottom left 95%, url("../pictures/home/banner/BgHeaderHome.png") no-repeat  ;
+        padding-bottom: 9rem;
+        position: relative;
+        background-size: 23rem auto, 100% 100%;   
+
+    }
+ 
+    /*gestion page works*/
+    .header-works-content-text {
+
+        h1 {
+            color: map-get($color, first);
+            text-align: center;
+            margin: 7rem 0 10rem 0;
+            font-weight: normal;
+            font-size: 2rem;
+
+            &::first-letter {
+                
+                text-transform: uppercase;
+            }
+        }
+    }
+   
+    /*traitement page about*/
+
+    .header-about-content-text {
+
+        font-size: 2rem;
+        margin: 14rem 0 0 0 ;  
+
+        .about-link-view-work {
+
+            margin-top: 5rem;
+            padding-bottom: 18rem;
+        }
+    }
+
+}
+/*media 720px end*/
+
+
+
+

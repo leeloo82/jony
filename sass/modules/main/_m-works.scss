@@ -1,0 +1,95 @@
+.header-works-detail-content-text {
+
+    h1 {
+
+         color: map-get($color, first );
+         font-weight: normal;
+         font-size: 2rem;
+         text-transform: capitalize;
+ 
+         margin: 7rem 0 17rem 0;
+         text-align: center;
+ 
+    }
+ 
+}
+ 
+.works-details {
+      
+     background: map-get($color, background-primary-m-main );
+     padding: 1rem;
+ 
+}
+ 
+.work-detail-content {
+
+    position: relative;
+    bottom: 10rem;
+
+    
+}
+.work-detail-content-text {
+        
+    margin: 2rem 0 0 0;
+
+    h2 {
+
+        color: map-get($color, first);
+        font-weight: normal;
+        padding: 7rem 1rem 1rem 0;
+
+        &::first-letter {
+
+            text-transform: uppercase;
+
+        }
+    }
+
+    p {
+
+        color: map-get($color, paragraph-first );
+        line-height: 2rem;
+    }
+
+    .project-link {
+
+        border: 1px solid map-get($color, second );
+        text-align: center;
+        padding: 1.5rem 0;
+
+        margin: 2.7rem 0 4rem 0;
+        
+
+        a {
+
+            color: map-get($color, second );
+            font-weight: bold;
+            text-transform: capitalize;
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .works-details {
+        
+        background: map-get($color, background-primary-m-main);
+        padding: 1rem 13rem;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+        .work-detail-content-text {
+            
+                margin: 4rem 10rem 0 10rem;
+    
+         }
+    
+}

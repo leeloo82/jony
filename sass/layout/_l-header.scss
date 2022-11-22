@@ -1,0 +1,110 @@
+
+.l-header-logo {
+
+    width: 5rem;
+    height: 2rem;
+    padding: 1rem ;
+    
+}
+
+.talk {
+
+    display: none;
+
+}
+
+.l-header-main {
+
+    h1 {
+
+        font-weight: normal;
+    
+        &::first-letter {
+    
+            text-transform: uppercase;
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+   
+
+    .l-header-logo {
+
+        width: 8rem;
+        height: 1.5rem;
+        padding: 1rem 1.7rem;
+
+    }
+
+    .talk {
+
+        display:block;
+        
+        position: relative;
+        right: 2%;
+        float: right;
+        bottom: 1rem;
+
+        width: 9rem;
+        height: .5rem;
+        border: 1px solid map-get($color, second);
+        color: map-get($color, second);
+        text-align: center;
+        padding: 1rem 2rem 2rem; 
+
+        a {
+            color: map-get($color, second);
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        
+    }
+
+    .header-home-content-tilte {
+
+        font-size: 3.5rem;
+        margin: 9rem 0 0 0;
+
+    }
+
+    .header-home-content-tilte-principal {
+
+        font-size: 3.5rem;
+
+    } 
+       
+   
+
+}/*media 720px end */
+
+
+@media screen and (min-width: 1024px) {
+    
+    .header-home-content-tilte {
+
+        margin: 9rem 0 0 18rem;
+
+    }
+
+    .header-home-content-tilte-principal {
+
+        margin-left: 18rem;
+
+    }
+
+    .header-home-content-text {
+
+        a {
+
+            margin: 4rem 0 0 18rem; 
+
+        }
+
+    }
+
+}/*media 1024px end */
+
